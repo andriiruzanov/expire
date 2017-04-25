@@ -1,0 +1,26 @@
+
+
+
+// colors
+$red: #e85f61;
+$blue: #33c1e3;
+$white: #f6f6f6;
+$black: #414141;
+$grey: #727272;
+
+// layout
+@import "_bootstrap";
+// @import "_misc/normalize";
+@import "_misc/mixins";
+@import "_misc/fonts";
+@import "_misc/font-awesome";
+@import "_misc/adjustment-flexbox";
+
+// styles
+@import "section/header";
+@import "section/content";
+@import "section/footer";
+
+
+
+

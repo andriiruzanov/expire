@@ -1,0 +1,57 @@
+$container-width: 1170px;
+$body-font: "MyriadProRegular", sans-serif;
+ 
+
+html {
+    width: 100%;
+    height: 100%;
+    font-size: 100.01%;
+    box-sizing: border-box; // чтобы padding margin border не влияли на размер блока и не появлялось прокруток горизонтальных
+}
+
+*, *:before, *:after {
+    box-sizing: inherit; 
+  }
+
+body {
+  font-family: $body-font;
+  font-size: 16px;
+  line-height: 1.42;
+  -webkit-font-smoothing: antialiased; 
+  background: $white;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  // min-width: 1440px;
+}
+
+//выравнивание по центру(одновременно и по ширине класса content) вне зависимости от размера экрана
+.container {
+  width: $container-width;
+  margin: 0 auto; 
+}
+
+ul {
+  padding: 0;
+  margin: 0; 
+}
+li {
+  list-style: none; 
+}
+
+// устойчивость верстки при изменении тегов сеошником
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  font-weight: normal;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
